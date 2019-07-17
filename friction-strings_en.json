@@ -22,5 +22,18 @@
   },
   "moveInSmallerSteps": {
     "value": "Move slower"
+  },
+  "a11y": {
+    "firstLevel": {
+      "value": "first level"
+    },
+    "something": {
+      "jigglingLess2": {
+        "value": "jiggle less"
+      },
+      "anotherJiggle": {
+        "value": "another jiggle"
+      }
+    }
   }
 }

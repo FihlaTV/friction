@@ -13,6 +13,12 @@ define( require => {
   const FrictionModel = require( 'FRICTION/friction/model/FrictionModel' );
 
   // a11y strings
+  const firstLevelString = require( 'string!FRICTION/a11y.firstLevel' );
+  console.log( 'firstLevelString ', firstLevelString );
+  const jigglingLess2String = require( 'string!FRICTION/a11y.something.jigglingLess2' );
+  console.log( 'jigglingLess2String', jigglingLess2String );
+  const anotherJiggleString = require( 'string!FRICTION/a11y.something.anotherJiggle' );
+  console.log( 'anotherJiggleString', anotherJiggleString );
   const jigglingLessString = FrictionA11yStrings.jigglingLess.value;
   const coolerString = FrictionA11yStrings.cooler.value;
   const nowCoolerString = FrictionA11yStrings.nowCooler.value;
