@@ -65,6 +65,7 @@ define( function( require ) {
    */
   function MagnifierNode( model, targetX, targetY, title, temperatureIncreasingDescriber, temperatureDecreasingDescriber,
                           bookMovementDescriber, tandem, options ) {
+    options.tandem = tandem;
     Node.call( this, options );
 
     // add container for clipping
@@ -150,7 +151,7 @@ define( function( require ) {
       FrictionModel.MAGNIFIED_ATOMS_INFO.distanceY * 6, {
         fill: null,
         cursor: 'pointer',
-        tandem: tandem,
+        tandem: tandem.createTandem( 'atomDragArea' ), // TODO: do we need this? probably do for a11y support, but it seems like an implementation detail
 
         // a11y
         focusHighlightLayerable: true
@@ -223,7 +224,7 @@ define( function( require ) {
     // alert the temperature state on focus
     const focusListener = {
       focus() {
-        if ( model.amplitudeProperty.value === model.amplitudeProperty.initialValue ) {
+        if ( model.vibrationAmplitudeProperty.value === model.vibrationAmplitudeProperty.initialValue ) {
           FrictionAlertManager.alertSettledAndCool();
         }
       }
