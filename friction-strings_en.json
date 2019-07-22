@@ -89,10 +89,10 @@
       "hot": {
         "value": "hot"
       },
-      "atWarm": {
+      "warm": {
         "value": "warm"
       },
-      "atCool": {
+      "cool": {
         "value": "cool"
       },
       "statePattern": {

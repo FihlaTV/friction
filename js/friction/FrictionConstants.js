@@ -24,8 +24,8 @@ define( function( require ) {
   const jiggleABitString = require( 'string!FRICTION/a11y.jiggle.aBit' );
   const temperatureVeryHotString = require( 'string!FRICTION/a11y.temperature.veryHot' );
   const temperatureHotString = require( 'string!FRICTION/a11y.temperature.hot' );
-  const temperatureAtWarmString = require( 'string!FRICTION/a11y.temperature.atWarm' );
-  const temperatureAtCoolString = require( 'string!FRICTION/a11y.temperature.atCool' );
+  const temperatureWarmString = require( 'string!FRICTION/a11y.temperature.warm' );
+  const temperatureCoolString = require( 'string!FRICTION/a11y.temperature.cool' );
 
   const FrictionConstants = {
     TOP_BOOK_COLOR_MACRO: new Color( 'rgb(125,226,249)' ), // color of the macroscopic view of the book
@@ -48,7 +48,7 @@ define( function( require ) {
 
     // a11y - the mappings work well divided into 9 sections (arbitrary, but @terracoda's design diagram fit into 9 well
     // These are only used for the screen summary description in the PDOM, not alerts
-    TEMPERATURE_STRINGS: [ temperatureAtCoolString, temperatureAtCoolString, temperatureAtWarmString, temperatureAtWarmString, temperatureAtWarmString, temperatureHotString, temperatureHotString,
+    TEMPERATURE_STRINGS: [ temperatureCoolString, temperatureCoolString, temperatureWarmString, temperatureWarmString, temperatureWarmString, temperatureHotString, temperatureHotString,
       temperatureHotString, temperatureVeryHotString ],
     JIGGLE_STRINGS: [ jiggleABitString, jiggleABitString, jiggleALittleString, jiggleALittleString, jiggleALittleString,
       jiggleALotString, jiggleALotString, jiggleALotString, jiggleALotString ]
