@@ -12,7 +12,6 @@ define( function( require ) {
   // modules
   const Color = require( 'SCENERY/util/Color' );
   const friction = require( 'FRICTION/friction' );
-  const FrictionA11yStrings = require( 'FRICTION/friction/FrictionA11yStrings' );
 
   // constants
   const MAJOR_PENTATONIC_PLAYBACK_RATES = [
@@ -20,13 +19,13 @@ define( function( require ) {
   ];
 
   // a11y strings
-  const jiggleALotString = FrictionA11yStrings.jiggleALot.value;
-  const jiggleALittleString = FrictionA11yStrings.jiggleALittle.value;
-  const jiggleABitString = FrictionA11yStrings.jiggleABit.value;
-  const veryHotString = FrictionA11yStrings.veryHot.value;
-  const hotString = FrictionA11yStrings.hot.value;
-  const atWarmString = FrictionA11yStrings.atWarm.value;
-  const atCoolString = FrictionA11yStrings.atCool.value;
+  const jiggleALotString = require( 'string!FRICTION/a11y.jiggleALot' );
+  const jiggleALittleString = require( 'string!FRICTION/a11y.jiggleALittle' );
+  const jiggleABitString = require( 'string!FRICTION/a11y.jiggleABit' );
+  const veryHotString = require( 'string!FRICTION/a11y.veryHot' );
+  const hotString = require( 'string!FRICTION/a11y.hot' );
+  const atWarmString = require( 'string!FRICTION/a11y.atWarm' );
+  const atCoolString = require( 'string!FRICTION/a11y.atCool' );
 
   const FrictionConstants = {
     TOP_BOOK_COLOR_MACRO: new Color( 'rgb(125,226,249)' ), // color of the macroscopic view of the book

@@ -17,7 +17,6 @@ define( ( require ) => {
 
   // modules
   const friction = require( 'FRICTION/friction' );
-  const FrictionA11yStrings = require( 'FRICTION/friction/FrictionA11yStrings' );
   const FrictionAlertManager = require( 'FRICTION/friction/view/FrictionAlertManager' );
   const FrictionModel = require( 'FRICTION/friction/model/FrictionModel' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
@@ -26,18 +25,18 @@ define( ( require ) => {
   const utteranceQueue = require( 'SCENERY_PHET/accessibility/utteranceQueue' );
 
   // a11y strings
-  const moreString = FrictionA11yStrings.more.value;
-  const fasterString = FrictionA11yStrings.faster.value;
-  const nowHotterString = FrictionA11yStrings.nowHotter.value;
-  const evenFasterString = FrictionA11yStrings.evenFaster.value;
-  const warmerString = FrictionA11yStrings.warmer.value;
-  const evenHotterString = FrictionA11yStrings.evenHotter.value;
+  const moreString = require( 'string!FRICTION/a11y.more' );
+  const fasterString = require( 'string!FRICTION/a11y.faster' );
+  const nowHotterString = require( 'string!FRICTION/a11y.nowHotter' );
+  const evenFasterString = require( 'string!FRICTION/a11y.evenFaster' );
+  const warmerString = require( 'string!FRICTION/a11y.warmer' );
+  const evenHotterString = require( 'string!FRICTION/a11y.evenHotter' );
 
-  const superFastString = FrictionA11yStrings.superFast.value;
-  const superHotString = FrictionA11yStrings.superHot.value;
+  const superFastString = require( 'string!FRICTION/a11y.superFast' );
+  const superHotString = require( 'string!FRICTION/a11y.superHot' );
 
-  const resetSimMoreObservationSentenceString = FrictionA11yStrings.resetSimMoreObservationSentence.value;
-  const frictionIncreasingAtomsJigglingTemperaturePatternString = FrictionA11yStrings.frictionIncreasingAtomsJigglingTemperaturePattern.value;
+  const resetSimMoreObservationSentenceString = require( 'string!FRICTION/a11y.resetSimMoreObservationSentence' );
+  const frictionIncreasingAtomsJigglingTemperaturePatternString = require( 'string!FRICTION/a11y.frictionIncreasingAtomsJigglingTemperaturePattern' );
 
   // alert object for the Maximum temp alert
   const MAX_TEMP_STRING = StringUtils.fillIn( frictionIncreasingAtomsJigglingTemperaturePatternString, {

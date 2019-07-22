@@ -10,17 +10,16 @@ define( ( require ) => {
   // modules
   const BooleanProperty = require( 'AXON/BooleanProperty' );
   const friction = require( 'FRICTION/friction' );
-  const FrictionA11yStrings = require( 'FRICTION/friction/FrictionA11yStrings' );
   const FrictionModel = require( 'FRICTION/friction/model/FrictionModel' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   const timer = require( 'AXON/timer' );
   const utteranceQueue = require( 'SCENERY_PHET/accessibility/utteranceQueue' );
 
   // a11y strings
-  const capitalizedVeryHotString = FrictionA11yStrings.capitalizedVeryHot.value;
-  const breakAwaySentenceFirstString = FrictionA11yStrings.breakAwaySentenceFirst.value;
-  const breakAwaySentenceAgainString = FrictionA11yStrings.breakAwaySentenceAgain.value;
-  const breakAwayNoneLeftString = FrictionA11yStrings.breakAwayNoneLeft.value;
+  const capitalizedVeryHotString = require( 'string!FRICTION/a11y.capitalizedVeryHot' );
+  const breakAwaySentenceFirstString = require( 'string!FRICTION/a11y.breakAwaySentenceFirst' );
+  const breakAwaySentenceAgainString = require( 'string!FRICTION/a11y.breakAwaySentenceAgain' );
+  const breakAwayNoneLeftString = require( 'string!FRICTION/a11y.breakAwayNoneLeft' );
 
   // constants
 

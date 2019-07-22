@@ -8,23 +8,16 @@ define( require => {
 
   // modules
   const friction = require( 'FRICTION/friction' );
-  const FrictionA11yStrings = require( 'FRICTION/friction/FrictionA11yStrings' );
   const FrictionAlertManager = require( 'FRICTION/friction/view/FrictionAlertManager' );
   const FrictionModel = require( 'FRICTION/friction/model/FrictionModel' );
 
   // a11y strings
-  const firstLevelString = require( 'string!FRICTION/a11y.firstLevel' );
-  console.log( 'firstLevelString ', firstLevelString );
-  const jigglingLess2String = require( 'string!FRICTION/a11y.something.jigglingLess2' );
-  console.log( 'jigglingLess2String', jigglingLess2String );
-  const anotherJiggleString = require( 'string!FRICTION/a11y.something.anotherJiggle' );
-  console.log( 'anotherJiggleString', anotherJiggleString );
-  const jigglingLessString = FrictionA11yStrings.jigglingLess.value;
-  const coolerString = FrictionA11yStrings.cooler.value;
-  const nowCoolerString = FrictionA11yStrings.nowCooler.value;
-  const lessString = FrictionA11yStrings.less.value;
-  const evenLessString = FrictionA11yStrings.evenLess.value;
-  const evenCoolerString = FrictionA11yStrings.evenCooler.value;
+  const jigglingLessString = require( 'string!FRICTION/a11y.jigglingLess' );
+  const coolerString = require( 'string!FRICTION/a11y.cooler' );
+  const nowCoolerString = require( 'string!FRICTION/a11y.nowCooler' );
+  const lessString = require( 'string!FRICTION/a11y.less' );
+  const evenLessString = require( 'string!FRICTION/a11y.evenLess' );
+  const evenCoolerString = require( 'string!FRICTION/a11y.evenCooler' );
 
   const DECREASING = [
     {

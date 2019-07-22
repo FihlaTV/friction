@@ -16,7 +16,6 @@ define( function( require ) {
   const CueArrow = require( 'FRICTION/friction/view/CueArrow' );
   const FocusHighlightPath = require( 'SCENERY/accessibility/FocusHighlightPath' );
   const friction = require( 'FRICTION/friction' );
-  const FrictionA11yStrings = require( 'FRICTION/friction/FrictionA11yStrings' );
   const FrictionAlertManager = require( 'FRICTION/friction/view/FrictionAlertManager' );
   const FrictionConstants = require( 'FRICTION/friction/FrictionConstants' );
   const FrictionDragHandler = require( 'FRICTION/friction/view/FrictionDragHandler' );
@@ -33,8 +32,8 @@ define( function( require ) {
   const simplePickupSound = require( 'sound!FRICTION/simple-pickup.mp3' );
 
   // a11y strings
-  const chemistryBookString = FrictionA11yStrings.chemistryBook.value;
-  const grabButtonHelpTextString = FrictionA11yStrings.grabButtonHelpText.value;
+  const chemistryBookString = require( 'string!FRICTION/a11y.chemistryBook' );
+  const grabButtonHelpTextString = require( 'string!FRICTION/a11y.grabButtonHelpText' );
 
   // constants
   const SOUND_LEVEL = 0.1;

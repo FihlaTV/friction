@@ -9,15 +9,14 @@ define( function( require ) {
 
   // modules
   const friction = require( 'FRICTION/friction' );
-  const FrictionA11yStrings = require( 'FRICTION/friction/FrictionA11yStrings' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   const Utterance = require( 'SCENERY_PHET/accessibility/Utterance' );
   const utteranceQueue = require( 'SCENERY_PHET/accessibility/utteranceQueue' );
 
   // a11y strings
-  const frictionIncreasingAtomsJigglingTemperatureFirstPatternString = FrictionA11yStrings.frictionIncreasingAtomsJigglingTemperatureFirstPattern.value;
-  const frictionIncreasingAtomsJigglingTemperaturePatternString = FrictionA11yStrings.frictionIncreasingAtomsJigglingTemperaturePattern.value;
-  const atomsJiggleTinyBitTempCoolString = FrictionA11yStrings.atomsJiggleTinyBitTempCool.value;
+  const frictionIncreasingAtomsJigglingTemperatureFirstPatternString = require( 'string!FRICTION/a11y.frictionIncreasingAtomsJigglingTemperatureFirstPattern' );
+  const frictionIncreasingAtomsJigglingTemperaturePatternString = require( 'string!FRICTION/a11y.frictionIncreasingAtomsJigglingTemperaturePattern' );
+  const atomsJiggleTinyBitTempCoolString = require( 'string!FRICTION/a11y.atomsJiggleTinyBitTempCool' );
 
   // utterance for announcing temperature and particle changes, persistent reference to use
   // alertStableDelay feature of utterance

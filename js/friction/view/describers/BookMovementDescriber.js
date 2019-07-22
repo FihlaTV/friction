@@ -12,7 +12,6 @@ define( require => {
   const BorderAlertsDescriber = require( 'SCENERY_PHET/accessibility/describers/BorderAlertsDescriber' );
   const DirectionEnum = require( 'SCENERY_PHET/accessibility/describers/DirectionEnum' );
   const friction = require( 'FRICTION/friction' );
-  const FrictionA11yStrings = require( 'FRICTION/friction/FrictionA11yStrings' );
   const FrictionModel = require( 'FRICTION/friction/model/FrictionModel' );
   const LeftRightAlertPair = require( 'FRICTION/friction/view/describers/LeftRightAlertPair' );
   const MovementDescriber = require( 'SCENERY_PHET/accessibility/describers/MovementDescriber' );
@@ -20,9 +19,9 @@ define( require => {
   const Utterance = require( 'SCENERY_PHET/accessibility/Utterance' );
 
   // a11y strings
-  const moveDownToRubHarderSentenceString = FrictionA11yStrings.moveDownToRubHarderSentence.value;
-  const downRubFastOrSlowString = FrictionA11yStrings.downRubFastOrSlow.value;
-  const positionMoveDownPatternString = FrictionA11yStrings.positionMoveDownPattern.value;
+  const moveDownToRubHarderSentenceString = require( 'string!FRICTION/a11y.moveDownToRubHarderSentence' );
+  const downRubFastOrSlowString = require( 'string!FRICTION/a11y.downRubFastOrSlow' );
+  const positionMoveDownPatternString = require( 'string!FRICTION/a11y.positionMoveDownPattern' );
 
   // constants
   const DEFAULT_AT_TOP_ALERT = BorderAlertsDescriber.getDefaultTopAlert();

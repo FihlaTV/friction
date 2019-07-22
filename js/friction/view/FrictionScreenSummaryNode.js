@@ -9,7 +9,6 @@ define( require => {
 
   // modules
   const friction = require( 'FRICTION/friction' );
-  const FrictionA11yStrings = require( 'FRICTION/friction/FrictionA11yStrings' );
   const FrictionConstants = require( 'FRICTION/friction/FrictionConstants' );
   const FrictionModel = require( 'FRICTION/friction/model/FrictionModel' );
   const Node = require( 'SCENERY/nodes/Node' );
@@ -17,22 +16,22 @@ define( require => {
 
 
   // a11y strings
-  const summarySentencePatternString = FrictionA11yStrings.summarySentencePattern.value;
-  const droppingAsAtomsJiggleLessString = FrictionA11yStrings.droppingAsAtomsJiggleLess.value;
-  const atomsJigglePatternString = FrictionA11yStrings.atomsJigglePattern.value;
-  const jiggleClausePatternString = FrictionA11yStrings.jiggleClausePattern.value;
-  const jiggleTemperatureScaleSentenceString = FrictionA11yStrings.jiggleTemperatureScaleSentence.value;
-  const thermometerString = FrictionA11yStrings.thermometer.value;
-  const temperaturePatternString = FrictionA11yStrings.temperaturePattern.value;
-  const moveChemistryBookSentenceString = FrictionA11yStrings.moveChemistryBookSentence.value;
-  const resetSimMoreObservationSentenceString = FrictionA11yStrings.resetSimMoreObservationSentence.value;
-  const startingChemistryBookPatternString = FrictionA11yStrings.startingChemistryBookPattern.value;
-  const lightlyString = FrictionA11yStrings.lightly.value;
-  const amountOfAtomsString = FrictionA11yStrings.amountOfAtoms.value;
-  const fewerString = FrictionA11yStrings.fewer.value;
-  const farFewerString = FrictionA11yStrings.farFewer.value;
-  const someString = FrictionA11yStrings.some.value;
-  const manyString = FrictionA11yStrings.many.value;
+  const summarySentencePatternString = require( 'string!FRICTION/a11y.summarySentencePattern' );
+  const droppingAsAtomsJiggleLessString = require( 'string!FRICTION/a11y.droppingAsAtomsJiggleLess' );
+  const atomsJigglePatternString = require( 'string!FRICTION/a11y.atomsJigglePattern' );
+  const jiggleClausePatternString = require( 'string!FRICTION/a11y.jiggleClausePattern' );
+  const jiggleTemperatureScaleSentenceString = require( 'string!FRICTION/a11y.jiggleTemperatureScaleSentence' );
+  const thermometerString = require( 'string!FRICTION/a11y.thermometer' );
+  const temperaturePatternString = require( 'string!FRICTION/a11y.temperaturePattern' );
+  const moveChemistryBookSentenceString = require( 'string!FRICTION/a11y.moveChemistryBookSentence' );
+  const resetSimMoreObservationSentenceString = require( 'string!FRICTION/a11y.resetSimMoreObservationSentence' );
+  const startingChemistryBookPatternString = require( 'string!FRICTION/a11y.startingChemistryBookPattern' );
+  const lightlyString = require( 'string!FRICTION/a11y.lightly' );
+  const amountOfAtomsString = require( 'string!FRICTION/a11y.amountOfAtoms' );
+  const fewerString = require( 'string!FRICTION/a11y.fewer' );
+  const farFewerString = require( 'string!FRICTION/a11y.farFewer' );
+  const someString = require( 'string!FRICTION/a11y.some' );
+  const manyString = require( 'string!FRICTION/a11y.many' );
 
   // Used for the screen summary sentence to compare how many atoms have evaporated
   const SOME_ATOMS_EVAPORATED_THRESHOLD = FrictionModel.NUMBER_OF_EVAPORABLE_ATOMS / 2;

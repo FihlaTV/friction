@@ -10,7 +10,6 @@ define( require => {
 
   // modules
   const friction = require( 'FRICTION/friction' );
-  const FrictionA11yStrings = require( 'FRICTION/friction/FrictionA11yStrings' );
   const GeneralKeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/GeneralKeyboardHelpSection' );
   const KeyboardHelpSection = require( 'SCENERY_PHET/keyboard/help/KeyboardHelpSection' );
   const TwoColumnKeyboardHelpContent = require( 'SCENERY_PHET/keyboard/help/TwoColumnKeyboardHelpContent' );
@@ -23,8 +22,8 @@ define( require => {
   const moveInSmallerStepsString = require( 'string!FRICTION/moveInSmallerSteps' );
 
   // a11y strings
-  const moveBookWithString = FrictionA11yStrings.moveBookWith.value;
-  const moveInSmallerStepsWithString = FrictionA11yStrings.moveInSmallerStepsWith.value;
+  const moveBookWithString = require( 'string!FRICTION/a11y.moveBookWith' );
+  const moveInSmallerStepsWithString = require( 'string!FRICTION/a11y.moveInSmallerStepsWith' );
 
   class FrictionKeyboardHelpContent extends TwoColumnKeyboardHelpContent {
     constructor() {

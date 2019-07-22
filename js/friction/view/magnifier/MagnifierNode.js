@@ -18,7 +18,6 @@ define( function( require ) {
   const CueArrow = require( 'FRICTION/friction/view/CueArrow' );
   const FocusHighlightPath = require( 'SCENERY/accessibility/FocusHighlightPath' );
   const friction = require( 'FRICTION/friction' );
-  const FrictionA11yStrings = require( 'FRICTION/friction/FrictionA11yStrings' );
   const FrictionAlertManager = require( 'FRICTION/friction/view/FrictionAlertManager' );
   const FrictionConstants = require( 'FRICTION/friction/FrictionConstants' );
   const FrictionDragHandler = require( 'FRICTION/friction/view/FrictionDragHandler' );
@@ -37,7 +36,7 @@ define( function( require ) {
   const Vector2 = require( 'DOT/Vector2' );
 
   // a11y strings
-  const zoomedInChemistryBookString = FrictionA11yStrings.zoomedInChemistryBook.value;
+  const zoomedInChemistryBookString = require( 'string!FRICTION/a11y.zoomedInChemistryBook' );
 
   // sounds
   const harpDropSound = require( 'sound!FRICTION/harp-drop.mp3' );

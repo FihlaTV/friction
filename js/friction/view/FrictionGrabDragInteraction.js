@@ -9,16 +9,15 @@ define( function( require ) {
 
   // modules
   const friction = require( 'FRICTION/friction' );
-  const FrictionA11yStrings = require( 'FRICTION/friction/FrictionA11yStrings' );
   const FrictionModel = require( 'FRICTION/friction/model/FrictionModel' );
   const GrabDragInteraction = require( 'SCENERY_PHET/accessibility/GrabDragInteraction' );
   const utteranceQueue = require( 'SCENERY_PHET/accessibility/utteranceQueue' );
 
   // a11y strings
-  const initialGrabbedNotTouchingString = FrictionA11yStrings.initialGrabbedNotTouching.value;
-  const grabbedNotTouchingString = FrictionA11yStrings.grabbedNotTouching.value;
-  const initialGrabbedTouchingString = FrictionA11yStrings.initialGrabbedTouching.value;
-  const grabbedTouchingString = FrictionA11yStrings.grabbedTouching.value;
+  const initialGrabbedNotTouchingString = require( 'string!FRICTION/a11y.initialGrabbedNotTouching' );
+  const grabbedNotTouchingString = require( 'string!FRICTION/a11y.grabbedNotTouching' );
+  const initialGrabbedTouchingString = require( 'string!FRICTION/a11y.initialGrabbedTouching' );
+  const grabbedTouchingString = require( 'string!FRICTION/a11y.grabbedTouching' );
 
   // constants
   const touchingAlerts = { initial: initialGrabbedTouchingString, subsequent: grabbedTouchingString };
