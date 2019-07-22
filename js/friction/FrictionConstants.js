@@ -19,13 +19,13 @@ define( function( require ) {
   ];
 
   // a11y strings
-  const jiggleALotString = require( 'string!FRICTION/a11y.jiggleALot' );
-  const jiggleALittleString = require( 'string!FRICTION/a11y.jiggleALittle' );
-  const jiggleABitString = require( 'string!FRICTION/a11y.jiggleABit' );
-  const veryHotString = require( 'string!FRICTION/a11y.veryHot' );
-  const hotString = require( 'string!FRICTION/a11y.hot' );
-  const atWarmString = require( 'string!FRICTION/a11y.atWarm' );
-  const atCoolString = require( 'string!FRICTION/a11y.atCool' );
+  const jiggleALotString = require( 'string!FRICTION/a11y.jiggle.aLot' );
+  const jiggleALittleString = require( 'string!FRICTION/a11y.jiggle.aLittle' );
+  const jiggleABitString = require( 'string!FRICTION/a11y.jiggle.aBit' );
+  const temperatureVeryHotString = require( 'string!FRICTION/a11y.temperature.veryHot' );
+  const temperatureHotString = require( 'string!FRICTION/a11y.temperature.hot' );
+  const temperatureAtWarmString = require( 'string!FRICTION/a11y.temperature.atWarm' );
+  const temperatureAtCoolString = require( 'string!FRICTION/a11y.temperature.atCool' );
 
   const FrictionConstants = {
     TOP_BOOK_COLOR_MACRO: new Color( 'rgb(125,226,249)' ), // color of the macroscopic view of the book
@@ -48,8 +48,8 @@ define( function( require ) {
 
     // a11y - the mappings work well divided into 9 sections (arbitrary, but @terracoda's design diagram fit into 9 well
     // These are only used for the screen summary description in the PDOM, not alerts
-    TEMPERATURE_STRINGS: [ atCoolString, atCoolString, atWarmString, atWarmString, atWarmString, hotString, hotString,
-      hotString, veryHotString ],
+    TEMPERATURE_STRINGS: [ temperatureAtCoolString, temperatureAtCoolString, temperatureAtWarmString, temperatureAtWarmString, temperatureAtWarmString, temperatureHotString, temperatureHotString,
+      temperatureHotString, temperatureVeryHotString ],
     JIGGLE_STRINGS: [ jiggleABitString, jiggleABitString, jiggleALittleString, jiggleALittleString, jiggleALittleString,
       jiggleALotString, jiggleALotString, jiggleALotString, jiggleALotString ]
   };

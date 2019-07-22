@@ -13,28 +13,28 @@ define( require => {
 
   // a11y strings
   const jigglingLessString = require( 'string!FRICTION/a11y.jigglingLess' );
-  const coolerString = require( 'string!FRICTION/a11y.cooler' );
-  const nowCoolerString = require( 'string!FRICTION/a11y.nowCooler' );
+  const temperatureCoolerString = require( 'string!FRICTION/a11y.temperature.cooler' );
+  const temperatureNowCoolerString = require( 'string!FRICTION/a11y.temperature.nowCooler' );
   const lessString = require( 'string!FRICTION/a11y.less' );
   const evenLessString = require( 'string!FRICTION/a11y.evenLess' );
-  const evenCoolerString = require( 'string!FRICTION/a11y.evenCooler' );
+  const temperatureEvenCoolerString = require( 'string!FRICTION/a11y.temperature.evenCooler' );
 
   const DECREASING = [
     {
       jiggle: lessString,
-      temp: coolerString,
+      temp: temperatureCoolerString,
       firstTime: {
         jiggle: jigglingLessString,
-        temp: coolerString
+        temp: temperatureCoolerString
       }
     },
     {
       jiggle: lessString,
-      temp: nowCoolerString
+      temp: temperatureNowCoolerString
     },
     {
       jiggle: evenLessString,
-      temp: evenCoolerString
+      temp: temperatureEvenCoolerString
     }
   ];
 

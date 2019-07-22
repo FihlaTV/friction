@@ -22,16 +22,16 @@ define( require => {
   const jiggleClausePatternString = require( 'string!FRICTION/a11y.jiggleClausePattern' );
   const jiggleTemperatureScaleSentenceString = require( 'string!FRICTION/a11y.jiggleTemperatureScaleSentence' );
   const thermometerString = require( 'string!FRICTION/a11y.thermometer' );
-  const temperaturePatternString = require( 'string!FRICTION/a11y.temperaturePattern' );
+  const temperatureStatePatternString = require( 'string!FRICTION/a11y.temperature.statePattern' );
   const moveChemistryBookSentenceString = require( 'string!FRICTION/a11y.moveChemistryBookSentence' );
   const resetSimMoreObservationSentenceString = require( 'string!FRICTION/a11y.resetSimMoreObservationSentence' );
   const startingChemistryBookPatternString = require( 'string!FRICTION/a11y.startingChemistryBookPattern' );
   const lightlyString = require( 'string!FRICTION/a11y.lightly' );
-  const amountOfAtomsString = require( 'string!FRICTION/a11y.amountOfAtoms' );
-  const fewerString = require( 'string!FRICTION/a11y.fewer' );
-  const farFewerString = require( 'string!FRICTION/a11y.farFewer' );
-  const someString = require( 'string!FRICTION/a11y.some' );
-  const manyString = require( 'string!FRICTION/a11y.many' );
+  const amountOfAtomsSentenceString = require( 'string!FRICTION/a11y.amountOfAtoms.sentence' );
+  const amountOfAtomsFewerString = require( 'string!FRICTION/a11y.amountOfAtoms.fewer' );
+  const amountOfAtomsFarFewerString = require( 'string!FRICTION/a11y.amountOfAtoms.farFewer' );
+  const amountOfAtomsSomeString = require( 'string!FRICTION/a11y.amountOfAtoms.some' );
+  const amountOfAtomsManyString = require( 'string!FRICTION/a11y.amountOfAtoms.many' );
 
   // Used for the screen summary sentence to compare how many atoms have evaporated
   const SOME_ATOMS_EVAPORATED_THRESHOLD = FrictionModel.NUMBER_OF_EVAPORABLE_ATOMS / 2;
@@ -115,17 +115,17 @@ define( require => {
 
       // some evaporated atoms, describe the chemistry book with some atoms "broken away"
       else if ( atomsEvaporated < SOME_ATOMS_EVAPORATED_THRESHOLD ) {
-        relativeChemistryBookSentence = StringUtils.fillIn( amountOfAtomsString, {
-          comparisonAmount: fewerString,
-          breakAwayAmount: someString
+        relativeChemistryBookSentence = StringUtils.fillIn( amountOfAtomsSentenceString, {
+          comparisonAmount: amountOfAtomsFewerString,
+          breakAwayAmount: amountOfAtomsSomeString
         } );
       }
 
       // lots of evaporated atoms, describe many missing atoms
       else {
-        relativeChemistryBookSentence = StringUtils.fillIn( amountOfAtomsString, {
-          comparisonAmount: farFewerString,
-          breakAwayAmount: manyString
+        relativeChemistryBookSentence = StringUtils.fillIn( amountOfAtomsSentenceString, {
+          comparisonAmount: amountOfAtomsFarFewerString,
+          breakAwayAmount: amountOfAtomsManyString
         } );
       }
 
@@ -212,7 +212,7 @@ define( require => {
       }
 
       // Fill in the current temperature string
-      const tempString = StringUtils.fillIn( temperaturePatternString, {
+      const tempString = StringUtils.fillIn( temperatureStatePatternString, {
         temp: this.amplitudeToTempString( vibrationAmplitudeProperty.value ),
         thermometer: inTransition ? '' : thermometerString
       } );

@@ -27,13 +27,13 @@ define( ( require ) => {
   // a11y strings
   const moreString = require( 'string!FRICTION/a11y.more' );
   const fasterString = require( 'string!FRICTION/a11y.faster' );
-  const nowHotterString = require( 'string!FRICTION/a11y.nowHotter' );
+  const temperatureNowHotterString = require( 'string!FRICTION/a11y.temperature.nowHotter' );
   const evenFasterString = require( 'string!FRICTION/a11y.evenFaster' );
-  const warmerString = require( 'string!FRICTION/a11y.warmer' );
-  const evenHotterString = require( 'string!FRICTION/a11y.evenHotter' );
+  const temperatureWarmerString = require( 'string!FRICTION/a11y.temperature.warmer' );
+  const temperatureEvenHotterString = require( 'string!FRICTION/a11y.temperature.evenHotter' );
 
   const superFastString = require( 'string!FRICTION/a11y.superFast' );
-  const superHotString = require( 'string!FRICTION/a11y.superHot' );
+  const temperatureSuperHotString = require( 'string!FRICTION/a11y.temperature.superHot' );
 
   const resetSimMoreObservationSentenceString = require( 'string!FRICTION/a11y.resetSimMoreObservationSentence' );
   const frictionIncreasingAtomsJigglingTemperaturePatternString = require( 'string!FRICTION/a11y.frictionIncreasingAtomsJigglingTemperaturePattern' );
@@ -41,21 +41,21 @@ define( ( require ) => {
   // alert object for the Maximum temp alert
   const MAX_TEMP_STRING = StringUtils.fillIn( frictionIncreasingAtomsJigglingTemperaturePatternString, {
     jigglingAmount: superFastString,
-    temperature: superHotString
+    temperature: temperatureSuperHotString
   } );
 
   const INCREASING = [
     {
       jiggle: moreString,
-      temp: warmerString
+      temp: temperatureWarmerString
     },
     {
       jiggle: fasterString,
-      temp: nowHotterString
+      temp: temperatureNowHotterString
     },
     {
       jiggle: evenFasterString,
-      temp: evenHotterString
+      temp: temperatureEvenHotterString
     }
   ];
 
