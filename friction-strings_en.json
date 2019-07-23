@@ -107,23 +107,14 @@
       "warmer": {
         "value": "warmer"
       },
-      "nowWarm": {
-        "value": "now warm"
-      },
       "evenHotter": {
         "value": "even hotter"
       },
       "evenCooler": {
         "value": "even cooler"
       },
-      "nowHot": {
-        "value": "now hot"
-      },
       "nowHotter": {
         "value": "now hotter"
-      },
-      "dropping": {
-        "value": "dropping"
       }
     },
     "thermometer": {
@@ -168,15 +159,6 @@
     "atomsJiggleTinyBitTempCool": {
       "value": "Atoms jiggle a tiny bit, temperature cool"
     },
-    "aTinyBit": {
-      "value": "a tiny bit"
-    },
-    "aLittle": {
-      "value": "a little"
-    },
-    "aLittleMore": {
-      "value": "a little more"
-    },
     "more": {
       "value": "more"
     },
@@ -206,12 +188,6 @@
     },
     "capitalizedVeryHot": {
       "value": "Very Hot"
-    },
-    "capitalizedAFew": {
-      "value": "A few"
-    },
-    "capitalizedMore": {
-      "value": "More"
     },
     "breakAwaySentenceFirst": {
       "value": "{{temp}}. Atoms break away from chemistry book."
