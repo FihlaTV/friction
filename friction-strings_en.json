@@ -151,7 +151,7 @@
       "value": "{{relativeChemistryBookSentence}}Chemistry book rests {{lightly}}on top of a Physics book, and is ready to be rubbed against it."
     },
     "lightly": {
-      "value": "lighty "
+      "value": "lightly "
     },
     "summarySentencePattern": {
       "value": "{{chemistryBookString}} {{jiggleTemperatureScaleSentence}}"
