@@ -4,7 +4,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.activeProperty": {
       "phetioDocumentation": "Indicates whether the screen is active.  For single-screen simulations, the screen is always active.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -16,7 +16,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.model.contactProperty": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -26,9 +26,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
     "friction.frictionScreen.model.evaporationEmitter": {
-      "phetioDocumentation": "Emits when atoms evaporate from the top book",
+      "phetioDocumentation": "Emits when atoms evaporate from the top book No arguments.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -40,7 +40,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.model.topBookPositionProperty": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
       "phetioPlayback": false,
@@ -52,7 +52,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.model.vibrationAmplitudeProperty": {
       "phetioDocumentation": "A relative, qualitative value describing the amount of vibration of the atoms",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
       "phetioPlayback": false,
@@ -64,7 +64,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.atomicView": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -76,7 +76,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.atomicView.atomDragArea": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -88,7 +88,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.atomicView.atomDragArea.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -100,7 +100,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.atomicView.atomDragArea.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -112,7 +112,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.atomicView.atomDragArea.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -124,7 +124,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.atomicView.backgroundDragHandler": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -134,45 +134,45 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ObjectIO"
     },
     "friction.frictionScreen.view.atomicView.backgroundDragHandler.dragAction": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. The arguments are:<br><ol><li>point: Vector2IO. the position of the drag in view coordinates</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+      "phetioTypeName": "ActionIO.<Vector2IO>"
     },
     "friction.frictionScreen.view.atomicView.backgroundDragHandler.dragEndAction": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. The arguments are:<br><ol><li>point: Vector2IO. the position of the drag end in view coordinates</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+      "phetioTypeName": "ActionIO.<Vector2IO>"
     },
     "friction.frictionScreen.view.atomicView.backgroundDragHandler.dragStartAction": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. The arguments are:<br><ol><li>point: Vector2IO. the position of the drag start in view coordinates</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+      "phetioTypeName": "ActionIO.<Vector2IO>"
     },
     "friction.frictionScreen.view.atomicView.backgroundDragHandler.isDraggingProperty": {
       "phetioDocumentation": "Indicates whether the object is dragging",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -184,7 +184,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.atomicView.dragAreaDragHandler": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -194,45 +194,45 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ObjectIO"
     },
     "friction.frictionScreen.view.atomicView.dragAreaDragHandler.dragAction": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. The arguments are:<br><ol><li>point: Vector2IO. the position of the drag in view coordinates</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+      "phetioTypeName": "ActionIO.<Vector2IO>"
     },
     "friction.frictionScreen.view.atomicView.dragAreaDragHandler.dragEndAction": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. The arguments are:<br><ol><li>point: Vector2IO. the position of the drag end in view coordinates</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+      "phetioTypeName": "ActionIO.<Vector2IO>"
     },
     "friction.frictionScreen.view.atomicView.dragAreaDragHandler.dragStartAction": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. The arguments are:<br><ol><li>point: Vector2IO. the position of the drag start in view coordinates</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+      "phetioTypeName": "ActionIO.<Vector2IO>"
     },
     "friction.frictionScreen.view.atomicView.dragAreaDragHandler.isDraggingProperty": {
       "phetioDocumentation": "Indicates whether the object is dragging",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -244,7 +244,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.atomicView.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -256,7 +256,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.atomicView.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -268,7 +268,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.atomicView.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -280,7 +280,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.bottomBookNode.titleText": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -292,7 +292,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.bottomBookNode.titleText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -304,7 +304,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.bottomBookNode.titleText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -316,7 +316,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.bottomBookNode.titleText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -328,7 +328,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.bottomBookNode.titleText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -340,7 +340,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.resetAllButton": {
       "phetioDocumentation": "The orange, round button that can be used to restore the initial state",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -352,7 +352,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.resetAllButton.enabledProperty": {
       "phetioDocumentation": "When disabled, the button is grayed out and cannot be pressed",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -362,9 +362,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
     "friction.frictionScreen.view.resetAllButton.firedEmitter": {
-      "phetioDocumentation": "Emits when the button is fired",
+      "phetioDocumentation": "Emits when the button is fired No arguments.",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -376,7 +376,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.resetAllButton.isFiringProperty": {
       "phetioDocumentation": "Temporarily becomes true while the Reset All button is firing.  Commonly used to disable audio effects during reset.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -388,7 +388,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.resetAllButton.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -400,7 +400,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.resetAllButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -410,33 +410,33 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
     "friction.frictionScreen.view.resetAllButton.pressListener.pressAction": {
-      "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event.",
+      "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event. The arguments are:<br><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<EventIO, VoidIO, VoidIO>"
+      "phetioTypeName": "ActionIO.<EventIO>"
     },
     "friction.frictionScreen.view.resetAllButton.pressListener.releaseAction": {
-      "phetioDocumentation": "Executes whenever a release occurs.",
+      "phetioDocumentation": "Executes whenever a release occurs. The arguments are:<br><ol><li>event: NullableIO.<EventIO></li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<NullableIO.<EventIO>, VoidIO>"
+      "phetioTypeName": "ActionIO.<NullableIO.<EventIO>>"
     },
     "friction.frictionScreen.view.resetAllButton.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -448,7 +448,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.thermometerNode": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -460,7 +460,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.thermometerNode.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -472,7 +472,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.thermometerNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -484,7 +484,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.thermometerNode.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -496,7 +496,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.topBookNode": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -508,7 +508,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.topBookNode.dragHandler": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -518,45 +518,45 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ObjectIO"
     },
     "friction.frictionScreen.view.topBookNode.dragHandler.dragAction": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. The arguments are:<br><ol><li>point: Vector2IO. the position of the drag in view coordinates</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+      "phetioTypeName": "ActionIO.<Vector2IO>"
     },
     "friction.frictionScreen.view.topBookNode.dragHandler.dragEndAction": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. The arguments are:<br><ol><li>point: Vector2IO. the position of the drag end in view coordinates</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+      "phetioTypeName": "ActionIO.<Vector2IO>"
     },
     "friction.frictionScreen.view.topBookNode.dragHandler.dragStartAction": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. The arguments are:<br><ol><li>point: Vector2IO. the position of the drag start in view coordinates</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<Vector2IO, VoidIO>"
+      "phetioTypeName": "ActionIO.<Vector2IO>"
     },
     "friction.frictionScreen.view.topBookNode.dragHandler.isDraggingProperty": {
       "phetioDocumentation": "Indicates whether the object is dragging",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -568,7 +568,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.topBookNode.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -580,7 +580,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.topBookNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -592,7 +592,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.topBookNode.titleText": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -604,7 +604,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.topBookNode.titleText.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -616,7 +616,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.topBookNode.titleText.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -628,7 +628,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.topBookNode.titleText.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -640,7 +640,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.topBookNode.titleText.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -652,7 +652,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.frictionScreen.view.topBookNode.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -664,7 +664,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.activeProperty": {
       "phetioDocumentation": "Determines whether the entire simulation is running and processing user input. Setting this property to false pauses the simulation, and prevents user interaction.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -676,7 +676,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.barrierRectangle": {
       "phetioDocumentation": "Semi-transparent barrier used to block input events when a dialog is shown, also fades out the background",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -686,9 +686,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "NodeIO"
     },
     "friction.general.barrierRectangle.inputListener.firedEmitter": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. No arguments.",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -698,33 +698,33 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "EmitterIO.<>"
     },
     "friction.general.barrierRectangle.inputListener.pressAction": {
-      "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event.",
+      "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event. The arguments are:<br><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<EventIO, VoidIO, VoidIO>"
+      "phetioTypeName": "ActionIO.<EventIO>"
     },
     "friction.general.barrierRectangle.inputListener.releaseAction": {
-      "phetioDocumentation": "Executes whenever a release occurs.",
+      "phetioDocumentation": "Executes whenever a release occurs. The arguments are:<br><ol><li>event: NullableIO.<EventIO></li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<NullableIO.<EventIO>, VoidIO>"
+      "phetioTypeName": "ActionIO.<NullableIO.<EventIO>>"
     },
     "friction.general.barrierRectangle.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -736,7 +736,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.barrierRectangle.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -748,7 +748,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.barrierRectangle.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -760,7 +760,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.browserTabVisibleProperty": {
       "phetioDocumentation": "Indicates whether the browser tab containing the simulation is currently visible",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -770,9 +770,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
     "friction.general.controller.input.changeAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the change DOM event.",
+      "phetioDocumentation": "Emits when the PDOM root gets the change DOM event. The arguments are:<br><ol><li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -782,9 +782,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<DOMEventIO>"
     },
     "friction.general.controller.input.clickAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the click DOM event.",
+      "phetioDocumentation": "Emits when the PDOM root gets the click DOM event. The arguments are:<br><ol><li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -794,9 +794,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<DOMEventIO>"
     },
     "friction.general.controller.input.focusinAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the focusin DOM event.",
+      "phetioDocumentation": "Emits when the PDOM root gets the focusin DOM event. The arguments are:<br><ol><li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -806,9 +806,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<DOMEventIO>"
     },
     "friction.general.controller.input.focusoutAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the focusout DOM event.",
+      "phetioDocumentation": "Emits when the PDOM root gets the focusout DOM event. The arguments are:<br><ol><li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -818,9 +818,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<DOMEventIO>"
     },
     "friction.general.controller.input.inputAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the input DOM event.",
+      "phetioDocumentation": "Emits when the PDOM root gets the input DOM event. The arguments are:<br><ol><li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -830,9 +830,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<DOMEventIO>"
     },
     "friction.general.controller.input.keydownAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the keydown DOM event.",
+      "phetioDocumentation": "Emits when the PDOM root gets the keydown DOM event. The arguments are:<br><ol><li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -842,9 +842,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<DOMEventIO>"
     },
     "friction.general.controller.input.keyupAction": {
-      "phetioDocumentation": "Emits when the PDOM root gets the keyup DOM event.",
+      "phetioDocumentation": "Emits when the PDOM root gets the keyup DOM event. The arguments are:<br><ol><li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -854,9 +854,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<DOMEventIO>"
     },
     "friction.general.controller.input.mouseDownAction": {
-      "phetioDocumentation": "Emits when a mouse button is pressed",
+      "phetioDocumentation": "Emits when a mouse button is pressed The arguments are:<br><ol><li>point: Vector2IO</li>\n<li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -866,9 +866,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<Vector2IO, DOMEventIO>"
     },
     "friction.general.controller.input.mouseMovedAction": {
-      "phetioDocumentation": "Emits when the mouse is moved",
+      "phetioDocumentation": "Emits when the mouse is moved The arguments are:<br><ol><li>point: Vector2IO</li>\n<li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
       "phetioPlayback": true,
@@ -878,9 +878,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<Vector2IO, DOMEventIO>"
     },
     "friction.general.controller.input.mouseOutAction": {
-      "phetioDocumentation": "Emits when the mouse moves out of the display",
+      "phetioDocumentation": "Emits when the mouse moves out of the display The arguments are:<br><ol><li>point: Vector2IO</li>\n<li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -890,9 +890,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<Vector2IO, DOMEventIO>"
     },
     "friction.general.controller.input.mouseOverAction": {
-      "phetioDocumentation": "Emits when the mouse is moved over a Node",
+      "phetioDocumentation": "Emits when the mouse is moved over a Node The arguments are:<br><ol><li>point: Vector2IO</li>\n<li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -902,9 +902,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<Vector2IO, DOMEventIO>"
     },
     "friction.general.controller.input.mouseUpAction": {
-      "phetioDocumentation": "Emits when a mouse button is released",
+      "phetioDocumentation": "Emits when a mouse button is released The arguments are:<br><ol><li>point: Vector2IO</li>\n<li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -914,9 +914,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<Vector2IO, DOMEventIO>"
     },
     "friction.general.controller.input.penCancelAction": {
-      "phetioDocumentation": "Emits when a pen is canceled",
+      "phetioDocumentation": "Emits when a pen is canceled The arguments are:<br><ol><li>id: NumberIO</li>\n<li>point: Vector2IO</li>\n<li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -926,9 +926,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
     "friction.general.controller.input.penEndAction": {
-      "phetioDocumentation": "Emits when a pen is lifted",
+      "phetioDocumentation": "Emits when a pen is lifted The arguments are:<br><ol><li>id: NumberIO</li>\n<li>point: Vector2IO</li>\n<li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -938,9 +938,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
     "friction.general.controller.input.penMoveAction": {
-      "phetioDocumentation": "Emits when a pen is moved",
+      "phetioDocumentation": "Emits when a pen is moved The arguments are:<br><ol><li>id: NumberIO</li>\n<li>point: Vector2IO</li>\n<li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
       "phetioPlayback": true,
@@ -950,9 +950,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
     "friction.general.controller.input.penStartAction": {
-      "phetioDocumentation": "Emits when a pen touches the screen",
+      "phetioDocumentation": "Emits when a pen touches the screen The arguments are:<br><ol><li>id: NumberIO</li>\n<li>point: Vector2IO</li>\n<li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -962,9 +962,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
     "friction.general.controller.input.touchCancelAction": {
-      "phetioDocumentation": "Emits when a touch is canceled",
+      "phetioDocumentation": "Emits when a touch is canceled The arguments are:<br><ol><li>id: NumberIO</li>\n<li>point: Vector2IO</li>\n<li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -974,9 +974,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
     "friction.general.controller.input.touchEndAction": {
-      "phetioDocumentation": "Emits when a touch ends",
+      "phetioDocumentation": "Emits when a touch ends The arguments are:<br><ol><li>id: NumberIO</li>\n<li>point: Vector2IO</li>\n<li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -986,9 +986,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
     "friction.general.controller.input.touchMoveAction": {
-      "phetioDocumentation": "Emits when a touch moves",
+      "phetioDocumentation": "Emits when a touch moves The arguments are:<br><ol><li>id: NumberIO</li>\n<li>point: Vector2IO</li>\n<li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
       "phetioPlayback": true,
@@ -998,9 +998,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
     "friction.general.controller.input.touchStartAction": {
-      "phetioDocumentation": "Emits when a touch begins",
+      "phetioDocumentation": "Emits when a touch begins The arguments are:<br><ol><li>id: NumberIO</li>\n<li>point: Vector2IO</li>\n<li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -1010,9 +1010,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<NumberIO, Vector2IO, DOMEventIO>"
     },
     "friction.general.controller.input.validatePointersAction": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. No arguments.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
       "phetioPlayback": true,
@@ -1022,9 +1022,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "ActionIO.<>"
     },
     "friction.general.controller.input.wheelScrollAction": {
-      "phetioDocumentation": "Emits when the mouse wheel scrolls",
+      "phetioDocumentation": "Emits when the mouse wheel scrolls The arguments are:<br><ol><li>event: DOMEventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
       "phetioPlayback": true,
@@ -1036,7 +1036,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.focusProperty": {
       "phetioDocumentation": "Stores the current focus for the simulation, null if there is not focus. This is not updated based on mouse or touch input, only keyboard and other alternative inputs.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1048,7 +1048,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.a11yButtonsHBox.keyboardHelpButton": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1060,7 +1060,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.a11yButtonsHBox.keyboardHelpButton.enabledProperty": {
       "phetioDocumentation": "When disabled, the button is grayed out and cannot be pressed",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1070,9 +1070,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
     "friction.general.navigationBar.a11yButtonsHBox.keyboardHelpButton.firedEmitter": {
-      "phetioDocumentation": "Emits when the button is fired",
+      "phetioDocumentation": "Emits when the button is fired No arguments.",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1084,7 +1084,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.a11yButtonsHBox.keyboardHelpButton.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1096,7 +1096,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.a11yButtonsHBox.keyboardHelpButton.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1106,33 +1106,33 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
     "friction.general.navigationBar.a11yButtonsHBox.keyboardHelpButton.pressListener.pressAction": {
-      "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event.",
+      "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event. The arguments are:<br><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<EventIO, VoidIO, VoidIO>"
+      "phetioTypeName": "ActionIO.<EventIO>"
     },
     "friction.general.navigationBar.a11yButtonsHBox.keyboardHelpButton.pressListener.releaseAction": {
-      "phetioDocumentation": "Executes whenever a release occurs.",
+      "phetioDocumentation": "Executes whenever a release occurs. The arguments are:<br><ol><li>event: NullableIO.<EventIO></li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<NullableIO.<EventIO>, VoidIO>"
+      "phetioTypeName": "ActionIO.<NullableIO.<EventIO>>"
     },
     "friction.general.navigationBar.a11yButtonsHBox.keyboardHelpButton.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1144,7 +1144,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.phetButton": {
       "phetioDocumentation": "The button that appears at the right side of the navigation bar, which shows a menu when pressed",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1156,7 +1156,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.phetButton.enabledProperty": {
       "phetioDocumentation": "When disabled, the button is grayed out and cannot be pressed",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1166,9 +1166,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
     "friction.general.navigationBar.phetButton.firedEmitter": {
-      "phetioDocumentation": "Emits when the button is fired",
+      "phetioDocumentation": "Emits when the button is fired No arguments.",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1180,7 +1180,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.phetButton.phetMenu": {
       "phetioDocumentation": "This menu is displayed when the PhET button is pressed.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1192,7 +1192,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.phetButton.phetMenu.aboutMenuItem": {
       "phetioDocumentation": "This menu item shows a dialog with information about the simulation.",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1202,9 +1202,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "NodeIO"
     },
     "friction.general.navigationBar.phetButton.phetMenu.aboutMenuItem.inputListener.firedEmitter": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. No arguments.",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1214,33 +1214,33 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "EmitterIO.<>"
     },
     "friction.general.navigationBar.phetButton.phetMenu.aboutMenuItem.inputListener.pressAction": {
-      "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event.",
+      "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event. The arguments are:<br><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<EventIO, VoidIO, VoidIO>"
+      "phetioTypeName": "ActionIO.<EventIO>"
     },
     "friction.general.navigationBar.phetButton.phetMenu.aboutMenuItem.inputListener.releaseAction": {
-      "phetioDocumentation": "Executes whenever a release occurs.",
+      "phetioDocumentation": "Executes whenever a release occurs. The arguments are:<br><ol><li>event: NullableIO.<EventIO></li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<NullableIO.<EventIO>, VoidIO>"
+      "phetioTypeName": "ActionIO.<NullableIO.<EventIO>>"
     },
     "friction.general.navigationBar.phetButton.phetMenu.aboutMenuItem.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1252,7 +1252,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.phetButton.phetMenu.aboutMenuItem.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1264,7 +1264,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.phetButton.phetMenu.aboutMenuItem.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1276,7 +1276,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.phetButton.phetMenu.screenshotMenuItem": {
       "phetioDocumentation": "This menu item captures a screenshot from the simulation and saves it to the file system.",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1286,9 +1286,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "NodeIO"
     },
     "friction.general.navigationBar.phetButton.phetMenu.screenshotMenuItem.inputListener.firedEmitter": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. No arguments.",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1298,33 +1298,33 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "EmitterIO.<>"
     },
     "friction.general.navigationBar.phetButton.phetMenu.screenshotMenuItem.inputListener.pressAction": {
-      "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event.",
+      "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event. The arguments are:<br><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<EventIO, VoidIO, VoidIO>"
+      "phetioTypeName": "ActionIO.<EventIO>"
     },
     "friction.general.navigationBar.phetButton.phetMenu.screenshotMenuItem.inputListener.releaseAction": {
-      "phetioDocumentation": "Executes whenever a release occurs.",
+      "phetioDocumentation": "Executes whenever a release occurs. The arguments are:<br><ol><li>event: NullableIO.<EventIO></li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<NullableIO.<EventIO>, VoidIO>"
+      "phetioTypeName": "ActionIO.<NullableIO.<EventIO>>"
     },
     "friction.general.navigationBar.phetButton.phetMenu.screenshotMenuItem.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1336,7 +1336,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.phetButton.phetMenu.screenshotMenuItem.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1348,7 +1348,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.phetButton.phetMenu.screenshotMenuItem.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1360,7 +1360,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.phetButton.pickableProperty": {
       "phetioDocumentation": "Set whether the phetButton will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1370,33 +1370,33 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO.<NullableIO.<BooleanIO>>"
     },
     "friction.general.navigationBar.phetButton.pressListener.pressAction": {
-      "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event.",
+      "phetioDocumentation": "Executes whenever a press occurs. The first argument when executing can be used to convey info about the Event. The arguments are:<br><ol><li>event: EventIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<EventIO, VoidIO, VoidIO>"
+      "phetioTypeName": "ActionIO.<EventIO>"
     },
     "friction.general.navigationBar.phetButton.pressListener.releaseAction": {
-      "phetioDocumentation": "Executes whenever a release occurs.",
+      "phetioDocumentation": "Executes whenever a release occurs. The arguments are:<br><ol><li>event: NullableIO.<EventIO></li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "user",
+      "phetioEventType": "USER",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
       "phetioReadOnly": false,
       "phetioState": false,
       "phetioStudioControl": true,
-      "phetioTypeName": "ActionIO.<NullableIO.<EventIO>, VoidIO>"
+      "phetioTypeName": "ActionIO.<NullableIO.<EventIO>>"
     },
     "friction.general.navigationBar.titleTextNode": {
       "phetioDocumentation": "Displays the title of the simulation in the navigation bar (bottom left)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1408,7 +1408,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.titleTextNode.opacityProperty": {
       "phetioDocumentation": "Opacity of the parent NodeIO, between 0 (invisible) and 1 (fully visible)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1420,7 +1420,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.titleTextNode.pickableProperty": {
       "phetioDocumentation": "Sets whether the node will be pickable (and hence interactive), see the NodeIO documentation for more details",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1432,7 +1432,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.titleTextNode.textProperty": {
       "phetioDocumentation": "Property for the displayed text",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1444,7 +1444,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.navigationBar.titleTextNode.visibleProperty": {
       "phetioDocumentation": "Controls whether the Node will be visible (and interactive), see the NodeIO documentation for more details.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1456,7 +1456,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.phetioCommandProcessor": {
       "phetioDocumentation": "Processes messages from the wrapper frame and returns the results. This serves as the source of PhET-iO data stream messages when commands are invoked from the wrapper.",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -1466,9 +1466,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PhetioCommandProcessorIO"
     },
     "friction.general.resizeAction": {
-      "phetioDocumentation": "Executes when the sim is resized",
+      "phetioDocumentation": "Executes when the sim is resized The arguments are:<br><ol><li>width: NumberIO</li>\n<li>height: NumberIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": true,
@@ -1480,7 +1480,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.screenIndexProperty": {
       "phetioDocumentation": "Indicates which screen is selected (0-indexed)",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": true,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1492,7 +1492,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.soundEnabledProperty": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1502,9 +1502,9 @@ window.phet.phetio.phetioElementsBaseline = assert &&
       "phetioTypeName": "PropertyIO.<BooleanIO>"
     },
     "friction.general.stepSimulationAction": {
-      "phetioDocumentation": "",
+      "phetioDocumentation": "A function that executes. The arguments are:<br><ol><li>dt: NumberIO</li></ol>",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": true,
       "phetioPlayback": true,
@@ -1516,7 +1516,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "friction.general.utteranceQueue": {
       "phetioDocumentation": "",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
@@ -1528,7 +1528,7 @@ window.phet.phetio.phetioElementsBaseline = assert &&
     "phetioEngine": {
       "phetioDocumentation": "Central point for PhET-iO interoperability",
       "phetioDynamicElement": false,
-      "phetioEventType": "model",
+      "phetioEventType": "MODEL",
       "phetioFeatured": false,
       "phetioHighFrequency": false,
       "phetioPlayback": false,
