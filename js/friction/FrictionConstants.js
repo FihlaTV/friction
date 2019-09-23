@@ -1,4 +1,4 @@
-// Copyright 2013-2018, University of Colorado Boulder
+// Copyright 2013-2019, University of Colorado Boulder
 
 /**
  * Shared constants for the 'Friction' simulation.
@@ -6,7 +6,7 @@
  * @author Jesse Greenberg (PhET Interactive Simulations)
  * @author Michael Kauzmann (PhET Interactive Simulations)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules

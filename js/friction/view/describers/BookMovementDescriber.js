@@ -141,11 +141,11 @@ define( require => {
      * @public
      */
     alertDirectionalMovement() {
-      var newLocation = this.locationProperty.get();
+      const newLocation = this.locationProperty.get();
       if ( !newLocation.equals( this.lastAlertedLocation ) ) {
-        var directions = this.getDirections( newLocation, this.lastAlertedLocation );
+        const directions = this.getDirections( newLocation, this.lastAlertedLocation );
 
-        directions.forEach( ( direction ) => {
+        directions.forEach( direction => {
           this.alertForDirection( direction );
         } );
 

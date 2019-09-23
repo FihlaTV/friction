@@ -1,11 +1,11 @@
-// Copyright 2016-2018, University of Colorado Boulder
+// Copyright 2016-2019, University of Colorado Boulder
 
 /**
  * This is an optimization that uses a CanvasNode to draw the atoms.
  *
  * @author John Blanco (PhET Interactive Simulations)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules

@@ -12,7 +12,7 @@
  *
  * @author Michael Kauzmann (PhET Interactive Simulations)
  */
-define( ( require ) => {
+define( require => {
   'use strict';
 
   // modules
@@ -104,7 +104,7 @@ define( ( require ) => {
       } );
 
       // @private
-      this.amplitudeListener = ( amplitude ) => {
+      this.amplitudeListener = amplitude => {
 
         if ( !this.tooSoonForNextAlert && // don't alert a subsequent alert too quickly
 

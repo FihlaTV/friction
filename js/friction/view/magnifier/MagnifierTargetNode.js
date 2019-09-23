@@ -1,4 +1,4 @@
-// Copyright 2013-2018, University of Colorado Boulder
+// Copyright 2013-2019, University of Colorado Boulder
 
 /**
  * View for magnifier's target, this includes the dashed traces up to the magnified view
@@ -8,7 +8,7 @@
  * @author Sam Reid (PhET Interactive Simulations)
  * @author Michael Kauzmann (PhET Interactive Simulations)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules

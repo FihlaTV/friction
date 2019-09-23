@@ -4,7 +4,7 @@
  * Manager for the alerts that are dynamically emitted in the simulation.
  * @author Michael Kauzmann (PhET Interactive Simulations)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
@@ -22,7 +22,7 @@ define( function( require ) {
   // alertStableDelay feature of utterance
   const temperatureJiggleUtterance = new Utterance();
 
-  var FrictionAlertManager = {
+  const FrictionAlertManager = {
 
     /**
      * @param {object} alertObject - data object holding strings for alert, see this.ALERT_SCHEMA
@@ -42,7 +42,7 @@ define( function( require ) {
         alertObject = alertObject.firstTime;
       }
 
-      var string = StringUtils.fillIn( patternString, {
+      const string = StringUtils.fillIn( patternString, {
         temperature: alertObject.temp,
         jigglingAmount: alertObject.jiggle
       } );

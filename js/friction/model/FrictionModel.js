@@ -7,7 +7,7 @@
  * @author John Blanco (PhET Interactive Simulations)
  * @author Sam Reid (PhET Interactive Simulations)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
@@ -424,7 +424,7 @@ define( function( require ) {
           this.scheduledEvaporationAmount = this.scheduledEvaporationAmount + EVAPORATION_AMPLITUDE_REDUCTION;
         }
 
-        var isCurrentRowFullyEvaporated = _.every( currentRowOfEvaporableAtoms, function( atom ) {
+        const isCurrentRowFullyEvaporated = _.every( currentRowOfEvaporableAtoms, function( atom ) {
           return atom.isEvaporated;
         } );
 

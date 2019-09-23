@@ -8,7 +8,7 @@
  * @author Michael Kauzmann (PhET Interactive Simulations)
  * @author Sam Reid (PhET Interactive Simulations)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
@@ -231,7 +231,7 @@ define( function( require ) {
 
 
     // a11y
-    var a11yGrabDragInteractionNode = new FrictionGrabDragInteraction( model, dragArea, {
+    const a11yGrabDragInteractionNode = new FrictionGrabDragInteraction( model, dragArea, {
       objectToGrabString: zoomedInChemistryBookString,
       tandem: tandem.createTandem( 'magnifierNodeGrabButton' ),
       grabCueOptions: {

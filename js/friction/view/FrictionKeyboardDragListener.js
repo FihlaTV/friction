@@ -5,7 +5,7 @@
  *
  * @author Michael Kauzmann (PhET Interactive Simulations)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
@@ -43,7 +43,7 @@ define( function( require ) {
         // update the oldPositionValue for the next onDrag
         oldPositionValue = model.topBookPositionProperty.get().copy();
       },
-      end: ( event ) => {
+      end: event => {
         model.bottomOffsetProperty.set( 0 );
 
         temperatureIncreasingDescriber.endDrag();

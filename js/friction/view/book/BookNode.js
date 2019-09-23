@@ -8,7 +8,7 @@
  * @author Sam Reid (PhET Interactive Simulations)
  * @author Michael Kauzmann (PhET Interactive Simulations)
  */
-define( function( require ) {
+define( require => {
   'use strict';
 
   // modules
@@ -62,7 +62,7 @@ define( function( require ) {
     assert && assert( typeof options.x === 'number', 'options.x must be specified' );
     assert && assert( typeof options.y === 'number', 'options.y must be specified' );
 
-    Node.call( this );
+    Node.call( this, options );
 
     // add cover, pass the whole tandem to hide the "cover" implementation detail
     this.addChild( new CoverNode( title, tandem, options ) );
@@ -164,8 +164,6 @@ define( function( require ) {
         focusHighlightLayerable: true
       } );
     }
-
-    this.mutate( options );
   }
 
   friction.register( 'BookNode', BookNode );

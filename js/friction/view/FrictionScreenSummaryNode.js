@@ -61,13 +61,13 @@ define( require => {
       let previousJiggleString = this.amplitudeToJiggleString( model.vibrationAmplitudeProperty.value );
 
       // make a11y updates as the amplitude changes in the model, no need to unlink, exists for sim lifetime.
-      model.vibrationAmplitudeProperty.link( ( amplitude ) => {
+      model.vibrationAmplitudeProperty.link( amplitude => {
 
           // the temperature is decreasing
-          var tempDecreasing = temperatureDecreasingDescriber.tempDecreasing;
+          const tempDecreasing = temperatureDecreasingDescriber.tempDecreasing;
 
           // Not if it is completely cool, so we don't trigger the update too much.
-          var amplitudeSettledButNotMin = amplitude < FrictionModel.AMPLITUDE_SETTLED_THRESHOLD && // considered in a "settled" state
+          const amplitudeSettledButNotMin = amplitude < FrictionModel.AMPLITUDE_SETTLED_THRESHOLD && // considered in a "settled" state
                                           amplitude !== FrictionModel.VIBRATION_AMPLITUDE_MIN; // not the minimum amplitude
 
           // nested if statements so that we don't have to calculate these strings as much
@@ -197,10 +197,10 @@ define( require => {
 
 
       // Default to describing the jiggling of the atoms
-      var jiggleAmount = StringUtils.fillIn( atomsJigglePatternString, {
+      const jiggleAmount = StringUtils.fillIn( atomsJigglePatternString, {
         jiggleAmount: this.amplitudeToJiggleString( vibrationAmplitudeProperty.value )
       } );
-      var jiggleClause = StringUtils.fillIn( jiggleClausePatternString, {
+      let jiggleClause = StringUtils.fillIn( jiggleClausePatternString, {
         jiggleAmount: jiggleAmount
       } );
 
