@@ -53,7 +53,7 @@
     },
     "amountOfAtoms": {
       "sentence": {
-        "value": "Chemistry book has {{comparisonAmount}} jiggling atoms as {{breakAwayAmount}} have broken away. "
+        "value": "Chemistry book has {{comparisonAmount}} jiggling atoms as {{breakAwayAmount}} have broken away."
       },
       "fewer": {
         "value": "fewer"
@@ -148,10 +148,10 @@
       "value": "Reset sim to make more observations."
     },
     "startingChemistryBookPattern": {
-      "value": "{{relativeChemistryBookSentence}}Chemistry book rests {{lightly}}on top of a Physics book, and is ready to be rubbed against it."
+      "value": "{{relativeChemistryBookSentence}} Chemistry book rests {{lightly}} on top of a Physics book, and is ready to be rubbed against it."
     },
     "lightly": {
-      "value": "lightly "
+      "value": "lightly"
     },
     "summarySentencePattern": {
       "value": "{{chemistryBookString}} {{jiggleTemperatureScaleSentence}}"
