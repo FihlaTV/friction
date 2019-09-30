@@ -14,14 +14,13 @@ define( require => {
   const Node = require( 'SCENERY/nodes/Node' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
 
-
   // a11y strings
   const summarySentencePatternString = require( 'string!FRICTION/a11y.summarySentencePattern' );
   const droppingAsAtomsJiggleLessString = require( 'string!FRICTION/a11y.droppingAsAtomsJiggleLess' );
   const atomsJigglePatternString = require( 'string!FRICTION/a11y.atomsJigglePattern' );
   const jiggleClausePatternString = require( 'string!FRICTION/a11y.jiggleClausePattern' );
   const jiggleTemperatureScaleSentenceString = require( 'string!FRICTION/a11y.jiggleTemperatureScaleSentence' );
-  const thermometerString = require( 'string!FRICTION/a11y.thermometer' );
+  const temperatureStateWithThermometerPatternString = require( 'string!FRICTION/a11y.temperature.stateWithThermometerPattern' );
   const temperatureStatePatternString = require( 'string!FRICTION/a11y.temperature.statePattern' );
   const moveChemistryBookSentenceString = require( 'string!FRICTION/a11y.moveChemistryBookSentence' );
   const resetSimMoreObservationSentenceString = require( 'string!FRICTION/a11y.resetSimMoreObservationSentence' );
@@ -68,7 +67,7 @@ define( require => {
 
           // Not if it is completely cool, so we don't trigger the update too much.
           const amplitudeSettledButNotMin = amplitude < FrictionModel.AMPLITUDE_SETTLED_THRESHOLD && // considered in a "settled" state
-                                          amplitude !== FrictionModel.VIBRATION_AMPLITUDE_MIN; // not the minimum amplitude
+                                            amplitude !== FrictionModel.VIBRATION_AMPLITUDE_MIN; // not the minimum amplitude
 
           // nested if statements so that we don't have to calculate these strings as much
           if ( tempDecreasing ||
@@ -212,9 +211,9 @@ define( require => {
       }
 
       // Fill in the current temperature string
-      const tempString = StringUtils.fillIn( temperatureStatePatternString, {
-        temp: this.amplitudeToTempString( vibrationAmplitudeProperty.value ),
-        thermometer: inTransition ? '' : thermometerString
+      const tempString = StringUtils.fillIn( inTransition ? temperatureStatePatternString :
+                                             temperatureStateWithThermometerPatternString, {
+        temp: this.amplitudeToTempString( vibrationAmplitudeProperty.value )
       } );
 
       // Construct the final sentence from its parts

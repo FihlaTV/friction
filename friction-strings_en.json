@@ -96,7 +96,10 @@
         "value": "cool"
       },
       "statePattern": {
-        "value": "surface temperature {{thermometer}}is {{temp}}"
+        "value": "surface temperature is {{temp}}"
+      },
+      "stateWithThermometerPattern": {
+        "value": "surface temperature thermometer is {{temp}}"
       },
       "cooler": {
         "value": "cooler"
@@ -116,9 +119,6 @@
       "nowHotter": {
         "value": "now hotter"
       }
-    },
-    "thermometer": {
-      "value": "thermometer "
     },
     "droppingAsAtomsJiggleLess": {
       "value": "dropping as atoms jiggle less"
