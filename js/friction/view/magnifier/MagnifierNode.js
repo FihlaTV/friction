@@ -231,15 +231,19 @@ define( require => {
 
 
     // a11y
-    const a11yGrabDragInteractionNode = new FrictionGrabDragInteraction( model, dragArea, {
+    const grabDragInteraction = new FrictionGrabDragInteraction( model, dragArea, {
       objectToGrabString: zoomedInChemistryBookString,
-      tandem: tandem.createTandem( 'magnifierNodeGrabButton' ),
+      tandem: tandem.createTandem( 'grabDragInteraction' ),
       grabCueOptions: {
         center: dragArea.center.minusXY( 0, 73 )
       },
       grabbableOptions: {
         focusHighlight: focusHighlightPath
       },
+
+      // The help text is provided by the BookNode's interaction
+      keyboardHelpText: null,
+      gestureHelpText: null,
 
       // handler for when the user grabs the book
       onGrab: () => {
@@ -328,7 +332,7 @@ define( require => {
 
     // @private
     this.resetMagnifierNode = function() {
-      a11yGrabDragInteractionNode.reset();
+      grabDragInteraction.reset();
     };
   }
 

@@ -22,6 +22,7 @@ define( require => {
   const FrictionGrabDragInteraction = require( 'FRICTION/friction/view/FrictionGrabDragInteraction' );
   const FrictionKeyboardDragListener = require( 'FRICTION/friction/view/FrictionKeyboardDragListener' );
   const inherit = require( 'PHET_CORE/inherit' );
+  const merge = require( 'PHET_CORE/merge' );
   const Node = require( 'SCENERY/nodes/Node' );
   const Shape = require( 'KITE/Shape' );
   const SoundClip = require( 'TAMBO/sound-generators/SoundClip' );
@@ -52,7 +53,7 @@ define( require => {
                      bookMovementDescriber, tandem, options ) {
     const self = this;
 
-    options = _.extend( {
+    options = merge( {
 
       // whether or not we can drag the book
       drag: false,
@@ -121,20 +122,20 @@ define( require => {
       this.addChild( focusHighlightRect );
       this.focusHighlight = focusHighlightRect; // this is a constraint of the grab/drag interaction;
 
-      // a11y
-      this.a11yGrabDragInteractionNode = new FrictionGrabDragInteraction( model, this, {
+      // @private - a11y
+      this.grabDragInteraction = new FrictionGrabDragInteraction( model, this, {
         objectToGrabString: chemistryBookString,
 
         // Empirically determined values to place the cue above the book.
         grabCueOptions: {
-          x: 60,
-          y: -55
+          x: 45,
+          y: -60
         },
         grabbableOptions: {
-          appendDescription: true,
-          helpText: grabButtonHelpTextString,
           focusHighlight: focusHighlightRect
         },
+
+        keyboardHelpText: grabButtonHelpTextString,
 
         onGrab: () => { bookPickupSoundClip.play(); },
 
@@ -142,7 +143,9 @@ define( require => {
 
         dragCueNode: arrows,
 
-        listenersForDrag: [ this.keyboardDragHandler, focusListener ]
+        listenersForDrag: [ this.keyboardDragHandler, focusListener ],
+
+        tandem: tandem.createTandem( 'grabDragInteraction' )
       } );
 
 
@@ -169,8 +172,12 @@ define( require => {
   friction.register( 'BookNode', BookNode );
 
   return inherit( Node, BookNode, {
+
+    /**
+     * @public
+     */
     reset: function() {
-      this.a11yGrabDragInteractionNode.reset();
+      this.grabDragInteraction.reset();
     }
   } );
 } );

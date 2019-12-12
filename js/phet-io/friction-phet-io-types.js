@@ -249,6 +249,14 @@ window.phet.phetio.phetioTypes = assert &&
       "supertype": "PropertyIO<BooleanIO>",
       "typeName": "DerivedPropertyIO<BooleanIO>"
     },
+    "DialogIO": {
+      "documentation": "A dialog panel",
+      "events": [],
+      "methodOrder": [],
+      "methods": {},
+      "supertype": "NodeIO",
+      "typeName": "DialogIO"
+    },
     "EmitterIO<>": {
       "documentation": "Emits when an event occurs and calls added listeners.",
       "events": [
@@ -273,6 +281,35 @@ window.phet.phetio.phetioTypes = assert &&
       "parameterTypes": [],
       "supertype": "ActionIO<>",
       "typeName": "EmitterIO<>"
+    },
+    "EmitterIO<NullableIO<EventIO>>": {
+      "documentation": "Emits when an event occurs and calls added listeners.",
+      "events": [
+        "emitted"
+      ],
+      "methodOrder": [],
+      "methods": {
+        "addListener": {
+          "documentation": "Adds a listener which will be called when the emitter emits.",
+          "parameterTypes": [
+            "FunctionIO(NullableIO<EventIO>)=>VoidIO"
+          ],
+          "returnType": "VoidIO"
+        },
+        "emit": {
+          "documentation": "Emits a single event to all listeners.",
+          "invocableForReadOnlyElements": false,
+          "parameterTypes": [
+            "NullableIO<EventIO>"
+          ],
+          "returnType": "VoidIO"
+        }
+      },
+      "parameterTypes": [
+        "NullableIO<EventIO>"
+      ],
+      "supertype": "ActionIO<NullableIO<EventIO>>",
+      "typeName": "EmitterIO<NullableIO<EventIO>>"
     },
     "EventIO": {
       "documentation": "An event, with a point",
@@ -334,6 +371,18 @@ window.phet.phetio.phetioTypes = assert &&
       ],
       "supertype": "ObjectIO",
       "typeName": "FunctionIO(NullableIO<BooleanIO>,NullableIO<NullableIO<BooleanIO>>)=>VoidIO"
+    },
+    "FunctionIO(NullableIO<EventIO>)=>VoidIO": {
+      "documentation": "Wrapper for the built-in JS function type.<br><strong>Arguments:</strong> NullableIO<EventIO><br><strong>Return Type:</strong> VoidIO",
+      "events": [],
+      "methodOrder": [],
+      "methods": {},
+      "parameterTypes": [
+        "NullableIO<EventIO>",
+        "VoidIO"
+      ],
+      "supertype": "ObjectIO",
+      "typeName": "FunctionIO(NullableIO<EventIO>)=>VoidIO"
     },
     "FunctionIO(NullableIO<FocusIO>,NullableIO<NullableIO<FocusIO>>)=>VoidIO": {
       "documentation": "Wrapper for the built-in JS function type.<br><strong>Arguments:</strong> NullableIO<FocusIO>, NullableIO<NullableIO<FocusIO>><br><strong>Return Type:</strong> VoidIO",
@@ -594,6 +643,17 @@ window.phet.phetio.phetioTypes = assert &&
       "methods": {},
       "supertype": "ObjectIO",
       "typeName": "PhetMenuIO"
+    },
+    "PhetioCapsuleIO<DialogIO>": {
+      "documentation": "An array that sends notifications when its values have changed.",
+      "events": [],
+      "methodOrder": [],
+      "methods": {},
+      "parameterTypes": [
+        "DialogIO"
+      ],
+      "supertype": "ObjectIO",
+      "typeName": "PhetioCapsuleIO<DialogIO>"
     },
     "PhetioCommandProcessorIO": {
       "documentation": "Invokes PhET-iO API commands on a running simulation.",
@@ -1093,6 +1153,14 @@ window.phet.phetio.phetioTypes = assert &&
       "methods": {},
       "supertype": "NodeIO",
       "typeName": "ResetAllButtonIO"
+    },
+    "RichTextIO": {
+      "documentation": "The tandem IO type for the scenery RichText node",
+      "events": [],
+      "methodOrder": [],
+      "methods": {},
+      "supertype": "NodeIO",
+      "typeName": "RichTextIO"
     },
     "StringIO": {
       "documentation": "Wrapper for the built-in JS string type",

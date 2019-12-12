@@ -45,13 +45,11 @@ define( require => {
         thanks: 'Thanks to Mobile Learner Labs for working with the PhET development team to convert this simulation to HTML5.'
       },
       keyboardHelpNode: keyboardHelpContent,
-      accessibility: true,
-      supportsEnhancedSound: true,
-      supportsSound: true
+      accessibility: true
     };
 
     // Create and start the sim
-    const screenTandem = Tandem.rootTandem.createTandem( 'frictionScreen' );
+    const screenTandem = Tandem.ROOT.createTandem( 'frictionScreen' );
     new Sim( frictionTitleString, [
       new Screen( function() {
           return new FrictionModel( LAYOUT_BOUNDS.width, LAYOUT_BOUNDS.height, screenTandem.createTandem( 'model' ) );

@@ -22,7 +22,6 @@ define( require => {
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
   const timer = require( 'AXON/timer' );
   const Utterance = require( 'SCENERY_PHET/accessibility/Utterance' );
-  const utteranceQueue = require( 'SCENERY_PHET/accessibility/utteranceQueue' );
 
   // a11y strings
   const moreString = require( 'string!FRICTION/a11y.more' );
@@ -158,7 +157,7 @@ define( require => {
      * @private
      */
     alertMaxTemp() {
-      this.alert( () => { utteranceQueue.addToBack( this.maxTempUtterance ); } );
+      this.alert( () => { phet.joist.sim.utteranceQueue.addToBack( this.maxTempUtterance ); } );
     }
 
     /**

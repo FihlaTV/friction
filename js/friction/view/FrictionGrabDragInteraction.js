@@ -11,7 +11,6 @@ define( require => {
   const friction = require( 'FRICTION/friction' );
   const FrictionModel = require( 'FRICTION/friction/model/FrictionModel' );
   const GrabDragInteraction = require( 'SCENERY_PHET/accessibility/GrabDragInteraction' );
-  const utteranceQueue = require( 'SCENERY_PHET/accessibility/utteranceQueue' );
 
   // a11y strings
   const initialGrabbedNotTouchingString = require( 'string!FRICTION/a11y.initialGrabbedNotTouching' );
@@ -32,7 +31,7 @@ define( require => {
   class FrictionGrabDragInteraction extends GrabDragInteraction {
 
     constructor( model, wrappedNode, options ) {
-      options = _.extend( {
+      options = merge( {
 
         // Function that returns whether or not the drag cue should be shown.
         successfulDrag: () => {
@@ -53,7 +52,7 @@ define( require => {
         if ( this.successfullyInteracted ) {
           alert = alerts.subsequent;
         }
-        utteranceQueue.addToBack( alert );
+        phet.joist.sim.utteranceQueue.addToBack( alert );
       };
 
       super( wrappedNode, options );
