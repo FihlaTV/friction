@@ -11,12 +11,13 @@ define( require => {
   const friction = require( 'FRICTION/friction' );
   const FrictionModel = require( 'FRICTION/friction/model/FrictionModel' );
   const GrabDragInteraction = require( 'SCENERY_PHET/accessibility/GrabDragInteraction' );
+  const merge = require( 'PHET_CORE/merge' );
 
   // a11y strings
-  const initialGrabbedNotTouchingString = require( 'string!FRICTION/a11y.initialGrabbedNotTouching' );
   const grabbedNotTouchingString = require( 'string!FRICTION/a11y.grabbedNotTouching' );
-  const initialGrabbedTouchingString = require( 'string!FRICTION/a11y.initialGrabbedTouching' );
   const grabbedTouchingString = require( 'string!FRICTION/a11y.grabbedTouching' );
+  const initialGrabbedNotTouchingString = require( 'string!FRICTION/a11y.initialGrabbedNotTouching' );
+  const initialGrabbedTouchingString = require( 'string!FRICTION/a11y.initialGrabbedTouching' );
 
   // constants
   const touchingAlerts = { initial: initialGrabbedTouchingString, subsequent: grabbedTouchingString };

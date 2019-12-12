@@ -10,7 +10,7 @@ define( require => {
   // modules
   const friction = require( 'FRICTION/friction' );
   const StringUtils = require( 'PHETCOMMON/util/StringUtils' );
-  const Utterance = require( 'SCENERY_PHET/accessibility/Utterance' );
+  const Utterance = require( 'UTTERANCE_QUEUE/Utterance' );
 
   // a11y strings
   const frictionIncreasingAtomsJigglingTemperatureFirstPatternString = require( 'string!FRICTION/a11y.frictionIncreasingAtomsJigglingTemperatureFirstPattern' );
